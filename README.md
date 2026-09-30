@@ -17,7 +17,8 @@ Folder ini adalah proyek Vercel terpisah untuk portal client. `index.html` menam
 
 Untuk mengirim folder ini ke GitHub setelah autentikasi Git tersedia:
 
+- Windows: klik dua kali `push_to_github.bat`. Jendela akan tetap terbuka agar hasilnya bisa dibaca.
 - Git Bash/Linux/macOS: `bash ./push_to_github.sh` (cek konfigurasi saja: `bash ./push_to_github.sh --check`)
-- PowerShell: `./push_to_github.ps1`
+- PowerShell: `./push_to_github.ps1` (cek konfigurasi saja: `./push_to_github.ps1 -Check`)
 
-Skrip Bash membuat commit jika ada perubahan, lalu melakukan push biasa tanpa force. Jika branch remote punya riwayat berbeda, push akan berhenti agar isi repo tidak tertimpa.
+Semua skrip membuat commit jika ada perubahan, lalu melakukan push biasa tanpa force. Jika branch remote punya riwayat berbeda, push akan berhenti agar isi repo tidak tertimpa.
