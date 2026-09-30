@@ -1,0 +1,9 @@
+{
+  "name": "pgrimatraman-client-iframe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Vercel iframe wrapper for the client's PGRI Cabang Matraman Apps Script deployment",
+  "scripts": {
+    "deploy": "vercel --prod"
+  }
+}
