@@ -15,4 +15,9 @@ Folder ini adalah proyek Vercel terpisah untuk portal client. `index.html` menam
 3. Hubungkan repo `pgrimatraman` ke Vercel dengan **Root Directory** `./` (jika repo berisi isi folder ini saja), **Framework Preset** `Other`, serta tanpa Build Command.
 4. Hubungkan domain yang dikelola pemelihara ke proyek Vercel tersebut. Perubahan domain atau wrapper dikelola di Vercel/repo pemelihara; data portal tetap di akun client.
 
-Untuk mengirim folder ini ke GitHub setelah autentikasi Git tersedia, jalankan `./push_to_github.ps1`. Skrip ini tidak memakai force push dan akan berhenti jika branch remote punya riwayat berbeda.
+Untuk mengirim folder ini ke GitHub setelah autentikasi Git tersedia:
+
+- Git Bash/Linux/macOS: `bash ./push_to_github.sh` (cek konfigurasi saja: `bash ./push_to_github.sh --check`)
+- PowerShell: `./push_to_github.ps1`
+
+Skrip Bash membuat commit jika ada perubahan, lalu melakukan push biasa tanpa force. Jika branch remote punya riwayat berbeda, push akan berhenti agar isi repo tidak tertimpa.
